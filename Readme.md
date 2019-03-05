@@ -1,6 +1,14 @@
 ## Kaggle Competition: Pet.my ##
 
-This is the first part of the competition : feature extracting and engineering. We will analyze each features with the target: **Adoption Speed**.
+We divide the Competition in 4 parts:
+
+- **Data Preparation** : This is the part of the competition i.e. downloading data, extracting features and creating features.
+
+- **Data Description** : Analyze graphically and statistically the impact of each features on **Adoption Speed**.
+
+- **Multi Class Models** : Implement XGboost, LightGBM, Decision Tree, Random Forest and stack all the models together to improve the prediction.
+
+- **Image Multi Class** : Implement Convolutional Neural Network to class images (pending)
 
 ### Requirements ###
 
@@ -33,7 +41,7 @@ All training file of the Kaggle Competition are included:
 - train_sentiment.zip
 
 
-### Conclusion on her first analysis
+### Conclusion on Data Description Analysis
 The category **0** (pet was adopted on the same day as it was listed) concerns only 3% of the Dataset. The prediction will be hard for this category.  
 Features that have an impact on *Adoption Speed*:  
 
@@ -57,7 +65,9 @@ Features with no impact or less impact on *Adoption Speed*:
 - Vaccinated, Dewormed and Sterilized seem to have no impact on Adoption Speed?   
 - Colors seem to have no impact  
 
-  
+### Conclusion on Multi Class Models
+
+
 
 
 
