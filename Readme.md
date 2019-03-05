@@ -40,15 +40,17 @@ Features that have an impact on *Adoption Speed*:
 - Type: cats are adopted faster than dogs
 - Mixed gender are adopted slower certainly due to the obligation to adopt more than one pet. 
 - An animal with more fur is adopted faster
-- Older pets are adopted slower
+- Younger pets are adopted faster
 - Small pets are adopted faster 
 - Mixed Breed seem to be adopted faster
 - Free cats seem to have an impact on the Adoption
 - Most Pets are adopted faster in Selangor and slower in Pulan Pinang and Kuala Lumpur. Selangor is the suburb of Kuala Lumpur.
 - The bigger rescuer seem to have faster adoption
 - Higher Sentiment Score -> fast adoption
-- If the Pet Name is missing the adoption is slower
-- Topicality and the image description seem to have an impact  
+- If the Pet Name is missing than the adoption is slower
+- Topicality and the image description seem to have an impact 
+- SVD and NMF variables are important features for Adoption Speed  
+- Open source like the GDP per region have an impact on Adoption Speed
 
 Features with no impact or less impact on *Adoption Speed*:  
 
