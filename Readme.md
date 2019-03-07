@@ -2,31 +2,47 @@
 
 We divide the Competition in 4 parts:
 
-- **Data Preparation** : This is the part of the competition i.e. downloading data, extracting features and creating features.
+- **Data Preparation** : This is the first part of the competition i.e. downloading data, extracting features and creating features.
 
 - **Data Description** : Analyze graphically and statistically the impact of each features on **Adoption Speed**.
 
-- **Multi Class Models** : Implement XGboost, LightGBM, Decision Tree, Random Forest and stack all the models together to improve the prediction.
+- **Multi Class Models** : Implement XGboost, LightGBM, Adaboost, SVM, SGD, Nearest Neight and combine all the models together for more robust prediction.
 
-- **Image Multi Class** : Implement Convolutional Neural Network to class images (pending)
+- **Image Multi Class** : Implement Convolutional Neural Network (CNN) to class images (pending)
 
 ### Requirements ###
 
 You need Python 3.1 or later to run the file **Pet.my.ipynb**.
 
-The following packages are necessary for this notebook:
+The following packages are necessary for this notebook.   
+For `features extraction`: 
+   
+- zipfile  
+- PIL  
+- pandas
+- io
+- os
+- json
+- glob
+- collections
+- functools
+- cv2
+- objectpath
+
+
+For `visualisation`:
 
 - numpy 
-- pandas
-- zipfile
-- PIL (`image extraction`)
-- io
-- cv2
-- json 
-- objectpath
 - seaborn
 - matplotlib
 - wordcloud
+
+For `modelisation`:
+
+- lightgbm
+- sklearn
+- xgboost
+
 
 ### Files used  
 
@@ -66,6 +82,15 @@ Features with no impact or less impact on *Adoption Speed*:
 - Colors seem to have no impact  
 
 ### Conclusion on Multi Class Models
+
+The data are ordinal in this case we can implement regression models and optimized the boundaries. 
+Thus, if the prediction is between:
+
+- *y_pred < 0.5 then class{0}* 
+- *y_pred in [0.5-1.7[ then class{1}* 
+- *y_pred in [1.7-2.6[ then class{2}*  
+- *y_pred in [2.6-3.6[ then class{3}*  
+- *y_pred >3.6 then class{4}*  
 
 
 
